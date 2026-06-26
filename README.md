@@ -1,0 +1,87 @@
+# organization-ai-skills
+
+A pack of Claude Code / claude.ai Agent skills for organizational knowledge work — marketing, communications, research, and operations. Designed for any organization to install, populate with their own context, and use immediately.
+
+Built by [@alectivism](https://github.com/alectivism). Derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack.
+
+---
+
+## Install
+
+### Claude Code (CLI)
+```bash
+npx skills add alectivism/organization-ai-skills
+```
+
+### Claude Code — Plugin Marketplace
+```
+/plugin marketplace add alectivism/organization-ai-skills
+```
+*(Requires a `marketplace.json` — coming in a future release.)*
+
+### Manual Install
+Copy any skill folder into your `~/.claude/skills/` directory:
+```bash
+cp -r ready/research ~/.claude/skills/research
+cp -r templates/brand-voice ~/.claude/skills/brand-voice
+```
+
+### claude.ai (Web)
+Zip a skill folder (e.g., `ready/research/`) and upload it under **Settings → Skills**.
+
+---
+
+## Ready vs Templates
+
+**Ready skills** work out of the box. They contain no organization-specific content — just general-purpose process instructions and tool-routing logic. Install and use immediately.
+
+**Template skills** need to be customized before they're useful. Each one contains clearly marked `[BRACKETED]` placeholders for your organization's name, programs, events, data, key staff, brand guidelines, and tools. You can fill these in manually, or paste your organization's context into Claude and ask it to populate them for you.
+
+> **Quick-start tip:** Fill in `org-context` and `brand-voice` first. Most other template skills reference them, so populating those two unlocks the rest.
+
+---
+
+## Skills Reference
+
+| Skill | Type | What it does |
+|-------|------|-------------|
+| **research** | ready | Web research with structured findings and cited sources. Triggered by "research", "look into", "find out about". |
+| **search-and-scrape** | ready | Routes search and scrape requests to the right tool — parallel-search, Exa, Perplexity, Jina, or Firecrawl — based on the task. Triggered before any web lookup. |
+| **linkedin-scrape** | ready | Scrapes LinkedIn profiles, posts, people, companies, and employees. Uses free local MCP for most tasks; Apify for bulk or shared-account use. |
+| **reddit-scrape** | ready | Scrapes Reddit posts and comments via Apify. Single post, subreddit browse, or keyword search. |
+| **zapier-workflow-builder** | ready | Designs Zapier workflows from natural language descriptions — architecture, Copilot prompts, task cost analysis, testing guidance. |
+| **content-draft** | template | Drafts marketing content in your brand voice — blog posts, newsletter articles, thought leadership, one-pagers, web copy. |
+| **content-strategy** | template | Builds content strategies — content pillars, audience matrices, editorial calendars, distribution plans, and KPIs. |
+| **social-post** | template | Writes social media posts optimized for LinkedIn and other platforms in your organization's voice. |
+| **press-release** | template | Writes wire-ready press releases with structured QA checklists, editor's notes, and source verification. |
+| **case-study** | template | Produces case studies from program results, client/member outcomes, or experiment data. |
+| **launch-strategy** | template | Plans program, product, research, or event launches — scoping, stakeholders, phased rollout, and go-to-market. |
+| **email-draft** | template | Drafts emails in your organization's voice, segmented by audience type (internal, clients, executives, prospects). |
+| **meeting-followup** | template | Generates segmented post-meeting follow-up emails from transcripts or notes. |
+| **briefing-prep** | template | Prepares structured meeting briefs — attendee research, relationship context, agenda, and talking points. |
+| **research-brief** | template | Formats research findings into audience-appropriate briefs — board updates, member summaries, internal updates, public-facing summaries. |
+| **event-promo** | template | Writes event promotional content — email invitations, social posts, one-pagers, and sponsor/speaker outreach. |
+| **slack-summary** | template | Summarizes Slack channel activity — decisions, action items, and key discussions. |
+| **asana-task** | template | Creates and manages Asana tasks with your organization's project structure and naming conventions. |
+| **document-find** | template | Locates documents in SharePoint, Google Drive, Notion, or other knowledge bases using your org's folder structure. |
+| **org-context** | template | Central reference for your organization's structure, teams, programs, events, tools, and key people. Fill this first — other skills reference it. |
+| **brand-voice** | template | Brand reference — naming rules, colors, fonts, tone, logo usage, and document formatting. Fill alongside org-context. |
+
+---
+
+## Excluded from v1
+
+The following skills from the source template were intentionally excluded because they are too organization-specific to generalize cleanly, or require proprietary data sources to function:
+
+- **lab-summary** — requires specific lab/experiment data that varies too much by org
+- **member-comms** — member communication patterns are membership-model-specific
+- **mma-pptx-builder** — PowerPoint generation tied to a specific slide template and brand
+- **mma-writing-style** — writing style guide embedded in a broader content reviewer workflow
+
+If your organization needs these, adapt from the source template directly.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
