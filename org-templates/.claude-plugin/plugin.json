@@ -1,0 +1,8 @@
+{
+  "name": "org-templates",
+  "description": "Fill-in template skills. Download, populate with your organization's own data (org-context, brand-voice, and the workflow skills that read from them), then install. Not meant to run unedited.",
+  "version": "1.0.0",
+  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "repository": "https://github.com/alectivism/organization-ai-skills",
+  "license": "MIT"
+}

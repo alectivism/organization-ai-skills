@@ -1,6 +1,6 @@
 # organization-ai-skills
 
-A pack of Claude Code / claude.ai Agent skills for organizational knowledge work — marketing, communications, research, and operations. Designed for any organization to install, populate with their own context, and use immediately.
+A pack of Agent Skills for organizational knowledge work (marketing, communications, research, operations), for Claude and ChatGPT. Add it as a marketplace, or install individual skills. Two plugins: **org-skills** (generic, ready to use) and **org-templates** (fill-in config you download and edit for your org).
 
 Built by [@alectivism](https://github.com/alectivism). Derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack.
 
@@ -8,26 +8,26 @@ Built by [@alectivism](https://github.com/alectivism). Derived from the [maven-t
 
 ## Install
 
-### Claude Code (CLI)
+### Add as a marketplace (Claude + ChatGPT)
+This repo is a plugin marketplace. Install the **org-skills** plugin to get every generic skill at once.
+
+- **Claude Code:** `/plugin marketplace add alectivism/organization-ai-skills`, then install **org-skills**.
+- **ChatGPT / Codex:** `codex plugin marketplace add alectivism/organization-ai-skills`, or in the ChatGPT desktop app use **Settings → Plugins → Add marketplace / Import from GitHub** with `https://github.com/alectivism/organization-ai-skills`.
+
+### Individual skills (Claude Code CLI)
 ```bash
 npx skills add alectivism/organization-ai-skills
 ```
 
-### Claude Code — Plugin Marketplace
-```
-/plugin marketplace add alectivism/organization-ai-skills
-```
-*(Requires a `marketplace.json` — coming in a future release.)*
-
-### Manual Install
-Copy any skill folder into your `~/.claude/skills/` directory:
+### Manual
+Copy any skill folder into your skills directory:
 ```bash
-cp -r ready/research ~/.claude/skills/research
-cp -r templates/brand-voice ~/.claude/skills/brand-voice
+cp -r org-skills/skills/research ~/.claude/skills/research
+cp -r org-templates/skills/brand-voice ~/.claude/skills/brand-voice
 ```
 
-### claude.ai (Web)
-Zip a skill folder (e.g., `ready/research/`) and upload it under **Settings → Skills**.
+### Web upload
+Zip a skill folder (e.g., `org-skills/skills/research/`) and upload it: claude.ai under **Settings → Skills**, ChatGPT at **chatgpt.com/skills → Create → Upload**.
 
 ---
 

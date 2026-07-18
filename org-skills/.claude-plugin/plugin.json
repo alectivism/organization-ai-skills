@@ -1,0 +1,8 @@
+{
+  "name": "org-skills",
+  "description": "Generic, ready-to-use Agent Skills for organizational knowledge work: research, scraping, content, comms, and ops. Install and use immediately in Claude or ChatGPT.",
+  "version": "1.0.0",
+  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "repository": "https://github.com/alectivism/organization-ai-skills",
+  "license": "MIT"
+}
