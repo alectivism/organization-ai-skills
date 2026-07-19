@@ -1,0 +1,8 @@
+{
+  "name": "org-meetings",
+  "description": "Meetings and internal comms: briefing prep, post-meeting follow-ups, research briefs, and Slack channel summaries.",
+  "version": "1.0.0",
+  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "repository": "https://github.com/alectivism/organization-ai-skills",
+  "license": "MIT"
+}

@@ -1,13 +1,41 @@
 {
   "name": "organization-ai-skills",
-  "description": "Generic Agent Skills for organizational knowledge work (marketing, comms, research, ops), for Claude and ChatGPT. Add the org-skills plugin to get them all.",
+  "description": "Generic Agent Skills for organizational knowledge work, for Claude and ChatGPT. Grouped into installable plugins so admins can preinstall some for everyone and offer others per team.",
   "owner": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
   "plugins": [
     {
-      "name": "org-skills",
-      "description": "Generic, ready-to-use skills for marketing, comms, research, and ops. Install and use immediately.",
+      "name": "org-research",
+      "description": "Web research, tool routing, LinkedIn and Reddit scraping.",
       "version": "1.0.0",
-      "source": "./org-skills",
+      "source": "./org-research",
+      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+    },
+    {
+      "name": "org-content",
+      "description": "Content and comms drafting: blog, social, press, case studies, email, events, strategy.",
+      "version": "1.0.0",
+      "source": "./org-content",
+      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+    },
+    {
+      "name": "org-meetings",
+      "description": "Briefing prep, meeting follow-ups, research briefs, Slack summaries.",
+      "version": "1.0.0",
+      "source": "./org-meetings",
+      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+    },
+    {
+      "name": "org-ops",
+      "description": "Asana tasks, document search, launch planning, Zapier workflows.",
+      "version": "1.0.0",
+      "source": "./org-ops",
+      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+    },
+    {
+      "name": "org-agents",
+      "description": "Subagent delegation with a per-platform model table.",
+      "version": "1.0.0",
+      "source": "./org-agents",
       "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
     }
   ]
