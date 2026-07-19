@@ -43,25 +43,26 @@ Zip a skill folder (e.g., `org-skills/skills/research/`) and upload it: claude.a
 
 | Skill | Type | What it does |
 |-------|------|-------------|
-| **research** | ready | Web research with structured findings and cited sources. Triggered by "research", "look into", "find out about". |
-| **search-and-scrape** | ready | Routes search and scrape requests to the right tool — parallel-search, Exa, Perplexity, Jina, or Firecrawl — based on the task. Triggered before any web lookup. |
-| **linkedin-scrape** | ready | Scrapes LinkedIn profiles, posts, people, companies, and employees. Uses free local MCP for most tasks; Apify for bulk or shared-account use. |
-| **reddit-scrape** | ready | Scrapes Reddit posts and comments via Apify. Single post, subreddit browse, or keyword search. |
-| **zapier-workflow-builder** | ready | Designs Zapier workflows from natural language descriptions — architecture, Copilot prompts, task cost analysis, testing guidance. |
-| **content-draft** | template | Drafts marketing content in your brand voice — blog posts, newsletter articles, thought leadership, one-pagers, web copy. |
-| **content-strategy** | template | Builds content strategies — content pillars, audience matrices, editorial calendars, distribution plans, and KPIs. |
-| **social-post** | template | Writes social media posts optimized for LinkedIn and other platforms in your organization's voice. |
-| **press-release** | template | Writes wire-ready press releases with structured QA checklists, editor's notes, and source verification. |
-| **case-study** | template | Produces case studies from program results, client/member outcomes, or experiment data. |
-| **launch-strategy** | template | Plans program, product, research, or event launches — scoping, stakeholders, phased rollout, and go-to-market. |
-| **email-draft** | template | Drafts emails in your organization's voice, segmented by audience type (internal, clients, executives, prospects). |
-| **meeting-followup** | template | Generates segmented post-meeting follow-up emails from transcripts or notes. |
-| **briefing-prep** | template | Prepares structured meeting briefs — attendee research, relationship context, agenda, and talking points. |
-| **research-brief** | template | Formats research findings into audience-appropriate briefs — board updates, member summaries, internal updates, public-facing summaries. |
-| **event-promo** | template | Writes event promotional content — email invitations, social posts, one-pagers, and sponsor/speaker outreach. |
-| **slack-summary** | template | Summarizes Slack channel activity — decisions, action items, and key discussions. |
-| **asana-task** | template | Creates and manages Asana tasks with your organization's project structure and naming conventions. |
-| **document-find** | template | Locates documents in SharePoint, Google Drive, Notion, or other knowledge bases using your org's folder structure. |
+| **research** | generic | Web research with structured findings and cited sources. Triggered by "research", "look into", "find out about". |
+| **search-and-scrape** | generic | Routes search and scrape requests to the right tool — parallel-search, Exa, Perplexity, Jina, or Firecrawl — based on the task. Triggered before any web lookup. |
+| **linkedin-scrape** | generic | Scrapes LinkedIn profiles, posts, people, companies, and employees. Uses free local MCP for most tasks; Apify for bulk or shared-account use. |
+| **reddit-scrape** | generic | Scrapes Reddit posts and comments via Apify. Single post, subreddit browse, or keyword search. |
+| **zapier-workflow-builder** | generic | Designs Zapier workflows from natural language descriptions — architecture, Copilot prompts, task cost analysis, testing guidance. |
+| **subagent-delegation** | generic | Routes gathering, reading, and bulk work to cheaper worker models, and escalates hard reasoning or a final check to a stronger model only when it helps. Roles: researcher, summarizer, bulk-worker, verifier, planner. |
+| **content-draft** | generic | Drafts marketing content in your brand voice — blog posts, newsletter articles, thought leadership, one-pagers, web copy. |
+| **content-strategy** | generic | Builds content strategies — content pillars, audience matrices, editorial calendars, distribution plans, and KPIs. |
+| **social-post** | generic | Writes social media posts optimized for LinkedIn and other platforms in your organization's voice. |
+| **press-release** | generic | Writes wire-ready press releases with structured QA checklists, editor's notes, and source verification. |
+| **case-study** | generic | Produces case studies from program results, client/member outcomes, or experiment data. |
+| **launch-strategy** | generic | Plans program, product, research, or event launches — scoping, stakeholders, phased rollout, and go-to-market. |
+| **email-draft** | generic | Drafts emails in your organization's voice, segmented by audience type (internal, clients, executives, prospects). |
+| **meeting-followup** | generic | Generates segmented post-meeting follow-up emails from transcripts or notes. |
+| **briefing-prep** | generic | Prepares structured meeting briefs — attendee research, relationship context, agenda, and talking points. |
+| **research-brief** | generic | Formats research findings into audience-appropriate briefs — board updates, member summaries, internal updates, public-facing summaries. |
+| **event-promo** | generic | Writes event promotional content — email invitations, social posts, one-pagers, and sponsor/speaker outreach. |
+| **slack-summary** | generic | Summarizes Slack channel activity — decisions, action items, and key discussions. |
+| **asana-task** | generic | Creates and manages Asana tasks with your organization's project structure and naming conventions. |
+| **document-find** | generic | Locates documents in SharePoint, Google Drive, Notion, or other knowledge bases using your org's folder structure. |
 | **org-context** | template | Central reference for your organization's structure, teams, programs, events, tools, and key people. Fill this first — other skills reference it. |
 | **brand-voice** | template | Brand reference — naming rules, colors, fonts, tone, logo usage, and document formatting. Fill alongside org-context. |
 

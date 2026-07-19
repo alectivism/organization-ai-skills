@@ -104,7 +104,7 @@ Present the content strategy as:
 7. **Resource requirements** — who creates what, any budget needs
 
 ## Brand Guardrails
-- All content follows [YOUR ORGANIZATION] brand voice (see `brand-voice` skill)
+- All content follows your organization's brand voice (use the `brand-voice` template if you have one)
 - Use "[YOUR ORGANIZATION FULL NAME]" on first reference, "[ACRONYM]" thereafter
 - Data claims must cite [YOUR ORGANIZATION]'s research with specific numbers
 - Embargoed research: no content until official release date
