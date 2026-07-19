@@ -1,20 +1,13 @@
 {
   "name": "organization-ai-skills",
-  "description": "Generic Agent Skills for organizational knowledge work (marketing, comms, research, ops), for Claude and ChatGPT, plus fill-in templates to customize for your org.",
+  "description": "Generic Agent Skills for organizational knowledge work (marketing, comms, research, ops), for Claude and ChatGPT. Add the org-skills plugin to get them all.",
   "owner": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
   "plugins": [
     {
       "name": "org-skills",
-      "description": "Generic, ready-to-use skills. Install and use immediately.",
+      "description": "Generic, ready-to-use skills for marketing, comms, research, and ops. Install and use immediately.",
       "version": "1.0.0",
       "source": "./org-skills",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
-    },
-    {
-      "name": "org-templates",
-      "description": "Fill-in templates. Download, populate with your org's data, then install.",
-      "version": "1.0.0",
-      "source": "./org-templates",
       "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
     }
   ]

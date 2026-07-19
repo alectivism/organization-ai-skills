@@ -1,6 +1,6 @@
 # organization-ai-skills
 
-A pack of Agent Skills for organizational knowledge work (marketing, communications, research, operations), for Claude and ChatGPT. Add it as a marketplace, or install individual skills. Two plugins: **org-skills** (generic, ready to use) and **org-templates** (fill-in config you download and edit for your org).
+A pack of Agent Skills for organizational knowledge work (marketing, communications, research, operations), for Claude and ChatGPT. Add the **org-skills** plugin to get all 19 generic skills at once, or install them individually. Two config files, `templates/org-context` and `templates/brand-voice`, are separate: you customize those for your own org (see below).
 
 Built by [@alectivism](https://github.com/alectivism). Derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack.
 
@@ -23,7 +23,7 @@ npx skills add alectivism/organization-ai-skills
 Copy any skill folder into your skills directory:
 ```bash
 cp -r org-skills/skills/research ~/.claude/skills/research
-cp -r org-templates/skills/brand-voice ~/.claude/skills/brand-voice
+cp -r templates/brand-voice ~/.claude/skills/brand-voice   # customize first
 ```
 
 ### Web upload
@@ -31,13 +31,11 @@ Zip a skill folder (e.g., `org-skills/skills/research/`) and upload it: claude.a
 
 ---
 
-## Ready vs Templates
+## The plugin vs the templates
 
-**Ready skills** work out of the box. They contain no organization-specific content — just general-purpose process instructions and tool-routing logic. Install and use immediately.
+**The `org-skills` plugin** is 19 generic skills that work out of the box: marketing, comms, research, and ops workflows with no org-specific setup. Install the plugin (above) and use them immediately in Claude or ChatGPT. Where a skill can use your org's context or brand voice, it reads the two files below if you've added them, and falls back to sensible defaults if you haven't.
 
-**Template skills** need to be customized before they're useful. Each one contains clearly marked `[BRACKETED]` placeholders for your organization's name, programs, events, data, key staff, brand guidelines, and tools. You can fill these in manually, or paste your organization's context into Claude and ask it to populate them for you.
-
-> **Quick-start tip:** Fill in `org-context` and `brand-voice` first. Most other template skills reference them, so populating those two unlocks the rest.
+**The `templates/` folder** holds two files you customize for your own org, and they are not part of the plugin: `org-context` (your structure, teams, programs, tools, key people) and `brand-voice` (naming rules, colors, fonts, tone). Download one, open it in Claude or ChatGPT, and ask the model to fill in the `[BRACKETED]` placeholders from a paste of your org's real details. Then install your filled-in copy the same way you'd install any skill.
 
 ---
 

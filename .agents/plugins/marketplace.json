@@ -9,12 +9,6 @@
       "source": { "source": "local", "path": "./org-skills" },
       "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
       "category": "Productivity"
-    },
-    {
-      "name": "org-templates",
-      "source": { "source": "local", "path": "./org-templates" },
-      "policy": { "installation": "NOT_AVAILABLE", "authentication": "ON_INSTALL" },
-      "category": "Productivity"
     }
   ]
 }
