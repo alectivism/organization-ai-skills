@@ -42,8 +42,8 @@ List your organization's most frequently needed files:
 - **[Add more as needed]**
 
 ## Search Strategy
-1. **Identify the right location** based on the document topic (use directory above)
-2. **Search within that location** using the platform's search
+1. **Search across all accessible locations first** when the connected platform supports it (Microsoft Graph search can search accessible SharePoint and OneDrive without a site filter)
+2. **Scope to the likely location** when the request names a team, region, site, or folder, or when global results need narrowing
 3. **Browse the document library** if search doesn't find it
 4. **Check common shared folders** — most platforms have a primary "Shared" or "General" library
 

@@ -2,7 +2,7 @@
 
 Agent Skills for organizational knowledge work (marketing, communications, research, operations), for **Claude and ChatGPT**. They use the open [Agent Skills](https://agentskills.io) standard (`SKILL.md`), so the same skill runs on both platforms unchanged.
 
-The pack is 20 generic skills grouped into five installable plugins, plus two `templates/` files you customize for your own org. Built by [@alectivism](https://github.com/alectivism); derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack. MIT.
+The pack is 19 generic skills grouped into five installable plugins, plus two `templates/` files you customize for your own org. Built by [@alectivism](https://github.com/alectivism); derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack. MIT.
 
 ## Plugins
 
@@ -10,7 +10,7 @@ The pack is 20 generic skills grouped into five installable plugins, plus two `t
 |---|---|---|
 | **org-research** | research, search-and-scrape, linkedin-scrape, reddit-scrape | preinstall |
 | **org-agents** | subagent-delegation | preinstall |
-| **org-content** | content-draft, content-strategy, social-post, press-release, case-study, email-draft, event-promo | available |
+| **org-content** | content-draft, content-strategy, press-release, case-study, email-draft, event-promo | available |
 | **org-meetings** | briefing-prep, meeting-followup, research-brief, slack-summary | available |
 | **org-ops** | asana-task, document-find, launch-strategy, zapier-workflow-builder | available |
 
@@ -68,7 +68,7 @@ Preinstall **org-research** (everyone researches) and **org-agents** (delegation
 ## Skills
 
 - **org-research:** research (cited web research), search-and-scrape (routes to parallel-search, Exa, Perplexity, Jina, or Firecrawl), linkedin-scrape, reddit-scrape.
-- **org-content:** content-draft, content-strategy, social-post, press-release, case-study, email-draft, event-promo.
+- **org-content:** content-draft, content-strategy, press-release, case-study, email-draft, event-promo.
 - **org-meetings:** briefing-prep, meeting-followup, research-brief, slack-summary.
 - **org-ops:** asana-task, document-find, launch-strategy, zapier-workflow-builder.
 - **org-agents:** subagent-delegation (routes gathering, reading, and bulk work to cheaper worker models and escalates to a stronger model only when it helps; carries a Claude column and a GPT-5.6 column).
