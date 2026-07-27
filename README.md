@@ -2,13 +2,13 @@
 
 Agent Skills for organizational knowledge work (marketing, communications, research, operations), for **Claude and ChatGPT**. They use the open [Agent Skills](https://agentskills.io) standard (`SKILL.md`), so the same skill runs on both platforms unchanged.
 
-The pack is 19 generic skills grouped into five installable plugins, plus two `templates/` files you customize for your own org. Built by [@alectivism](https://github.com/alectivism); derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack. MIT.
+The pack is 20 generic skills grouped into five installable plugins, plus two `templates/` files you customize for your own org. Built by [@alectivism](https://github.com/alectivism); derived from the [maven-template](https://github.com/alectivism/maven-template) skill pack. MIT.
 
 ## Plugins
 
 | Plugin | Skills | Default stance |
 |---|---|---|
-| **org-research** | research, search-and-scrape, linkedin-scrape, reddit-scrape | preinstall |
+| **org-research** | research, search-and-scrape, x-research, linkedin-scrape, reddit-scrape | preinstall |
 | **org-agents** | subagent-delegation | preinstall |
 | **org-content** | content-draft, content-strategy, press-release, case-study, email-draft, event-promo | available |
 | **org-meetings** | briefing-prep, meeting-followup, research-brief, slack-summary | available |
@@ -67,7 +67,7 @@ Preinstall **org-research** (everyone researches) and **org-agents** (delegation
 
 ## Skills
 
-- **org-research:** research (cited web research), search-and-scrape (routes to parallel-search, Exa, Perplexity, Jina, or Firecrawl), linkedin-scrape, reddit-scrape.
+- **org-research:** research (cited web research), search-and-scrape (routes to the right general or platform Skill), x-research (X posts and audiences through [X Tweet Scraper](https://apify.com/xquik/x-tweet-scraper) and [X Follower Scraper](https://apify.com/xquik/x-follower-scraper)), linkedin-scrape, reddit-scrape.
 - **org-content:** content-draft, content-strategy, press-release, case-study, email-draft, event-promo.
 - **org-meetings:** briefing-prep, meeting-followup, research-brief, slack-summary.
 - **org-ops:** asana-task, document-find, launch-strategy, zapier-workflow-builder.
@@ -80,3 +80,5 @@ Preinstall **org-research** (everyone researches) and **org-agents** (delegation
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.

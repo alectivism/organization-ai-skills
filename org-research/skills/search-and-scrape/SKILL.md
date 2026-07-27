@@ -1,6 +1,6 @@
 ---
 name: search-and-scrape
-description: Use BEFORE any web search, lookup, or page fetch/scrape to pick the right tool instead of defaulting to one. Routes SEARCH across parallel-search (general default), Exa (semantic / find-similar / discovery), and Perplexity (synthesized cited answers + deep research); routes FETCH across Jina Reader (default, fast/cheap) and Firecrawl (JS-heavy / anti-bot / structured extract / crawl). Defers to linkedin-scrape and reddit-scrape for those platforms. Triggers on "search", "look up", "find out", "research", "scrape", "fetch this page", "get this article".
+description: Use BEFORE any web search, lookup, or page fetch/scrape to pick the right tool instead of defaulting to one. Routes SEARCH across parallel-search (general default), Exa (semantic / find-similar / discovery), and Perplexity (synthesized cited answers + deep research); routes FETCH across Jina Reader (default, fast/cheap) and Firecrawl (JS-heavy / anti-bot / structured extract / crawl). Defers to x-research, linkedin-scrape, and reddit-scrape for those platforms. Triggers on "search", "look up", "find out", "research", "scrape", "fetch this page", "get this article".
 ---
 
 # Search & Scrape Routing
@@ -35,6 +35,7 @@ Pick the tool that fits the job. Do not reflexively use one tool for everything.
 
 - **LinkedIn** (profiles, posts, people/company search): both Firecrawl and Jina are **blocked**. Use the **`linkedin-scrape`** skill (LinkedIn MCP default, Apify for large bulk). Do not attempt Firecrawl/Jina/WebFetch on linkedin.com.
 - **Reddit** (posts, comments, subreddits, keyword search): Firecrawl, Jina, and WebFetch are all **blocked** from reddit.com. Use the **`reddit-scrape`** skill, or append `.json` to a Reddit URL, or Gemini/Search1API.
+- **X / Twitter** (posts, profiles, threads, engagement, audiences, lists, communities): use the **`x-research`** skill. It requires bounded, approved Apify Actor runs.
 
 ## Notes
 - `webcrawler` MCP is disabled — Firecrawl + Jina cover its use cases.
