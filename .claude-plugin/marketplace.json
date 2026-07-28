@@ -5,8 +5,8 @@
   "plugins": [
     {
       "name": "org-research",
-      "description": "Web research, tool routing, LinkedIn and Reddit scraping.",
-      "version": "1.0.0",
+      "description": "Web research, tool routing, and X, LinkedIn, and Reddit scraping.",
+      "version": "1.1.0",
       "source": "./org-research",
       "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
     },
