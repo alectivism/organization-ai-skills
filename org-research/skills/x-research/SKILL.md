@@ -15,10 +15,10 @@ allowed-tools:
 
 Use two Xquik Apify Actors for public X research.
 
-| Actor | Connector Identifier | REST Identifier |
-|---|---|---|
-| [X Tweet Scraper](https://apify.com/xquik/x-tweet-scraper) | `xquik/x-tweet-scraper` | `xquik~x-tweet-scraper` |
-| [X Follower Scraper](https://apify.com/xquik/x-follower-scraper) | `xquik/x-follower-scraper` | `xquik~x-follower-scraper` |
+| Actor | Connector Identifier | REST Identifier | Actor ID |
+|---|---|---|---|
+| [X Tweet Scraper](https://apify.com/xquik/x-tweet-scraper) | `xquik/x-tweet-scraper` | `xquik~x-tweet-scraper` | `wAusCMrm284Voaw86` |
+| [X Follower Scraper](https://apify.com/xquik/x-follower-scraper) | `xquik/x-follower-scraper` | `xquik~x-follower-scraper` | `AaT0BcKU5GQh97wdt` |
 
 Use X Tweet Scraper for post evidence.
 
