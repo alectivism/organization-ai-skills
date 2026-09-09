@@ -1,8 +1,11 @@
 {
   "name": "org-research",
-  "description": "Ready-to-use research and scraping skills: web research with cited sources, tool routing, and LinkedIn and Reddit scraping.",
-  "version": "1.0.0",
-  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "description": "Cited web research, per-job search and fetch tool routing, LinkedIn and Reddit scraping, and prospect qualification that stays read-only against your CRM.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Alec Foster",
+    "url": "https://github.com/alectivism"
+  },
   "repository": "https://github.com/alectivism/organization-ai-skills",
   "license": "MIT"
 }

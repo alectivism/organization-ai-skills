@@ -1,6 +1,7 @@
 ---
 name: search-and-scrape
 description: Use BEFORE any web search, lookup, or page fetch/scrape to pick the right tool instead of defaulting to one. Routes SEARCH across parallel-search (general default), Exa (semantic / find-similar / discovery), and Perplexity (synthesized cited answers + deep research); routes FETCH across Jina Reader (default, fast/cheap) and Firecrawl (JS-heavy / anti-bot / structured extract / crawl). Defers to linkedin-scrape and reddit-scrape for those platforms. Triggers on "search", "look up", "find out", "research", "scrape", "fetch this page", "get this article".
+status: ready
 ---
 
 # Search & Scrape Routing

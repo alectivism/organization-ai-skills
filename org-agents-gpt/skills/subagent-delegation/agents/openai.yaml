@@ -1,0 +1,7 @@
+interface:
+  display_name: "Subagent Delegation"
+  short_description: "Route multi-part work to the cheapest suitable available workers"
+  default_prompt: "Apply the subagent delegation policy before starting this multi-part task."
+
+policy:
+  allow_implicit_invocation: true

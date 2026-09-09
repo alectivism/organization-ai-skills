@@ -1,8 +1,11 @@
 {
   "name": "org-content",
-  "description": "Content and communications drafting: blog and web copy, social posts, press releases, case studies, emails, event promotion, and content strategy.",
-  "version": "1.0.0",
-  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "description": "Content and comms drafting (blog, social, press, case studies, email, events, strategy), audience personas, personal voice, and a factual-accuracy gate with a claim scanner.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Alec Foster",
+    "url": "https://github.com/alectivism"
+  },
   "repository": "https://github.com/alectivism/organization-ai-skills",
   "license": "MIT"
 }

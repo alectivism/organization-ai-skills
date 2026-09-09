@@ -1,0 +1,9 @@
+{
+  "last_updated": "[YYYY-MM-DD]",
+  "row_count": "[number of rows in staff-directory.csv]",
+  "source": "[where this roster comes from — e.g., \"HRIS export\", \"Directory API\", \"SharePoint: Team > HR > Staff Roster.xlsx\"]",
+  "excludes": "[fields deliberately left out and why — e.g., \"personal email, personal mobile, birthday (not distributed this widely)\"]",
+  "chat_ids_matched": "[how many rows have a chat_id populated, e.g., \"92/110\"]",
+  "refresh_pipeline": "[how the CSV gets regenerated — e.g., \"scheduled script via cron/LaunchAgent/CI, scripts/refresh-roster.py\"]",
+  "status": "[ok / stale / needs attention]"
+}

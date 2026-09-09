@@ -1,0 +1,57 @@
+{
+  "_comment": "Written by the first-run interview. Everything here is yours to change; the skill reads it rather than assuming a structure.",
+
+  "owner": "[Your Name]",
+  "aliases": ["[First Name]", "[Initials]"],
+
+  "store": {
+    "_options": "folder | sharepoint | asana",
+    "type": "folder",
+    "path": "<workspace>/meeting-commitments",
+
+    "_sharepoint_example": {
+      "type": "sharepoint",
+      "site": "[Your SharePoint Site]",
+      "path": "Documents/AI/commitments/ledger.jsonl"
+    },
+    "_asana_example": {
+      "type": "asana",
+      "project": "My Commitments",
+      "_note": "Tasks are the state. Completion comes back from Asana natively, but a bad extraction becomes a real task."
+    },
+    "_warning": "Do not point type:folder at a synced OneDrive or Dropbox path. Sync rewrites files underneath you and produces conflicted copies. Use type:sharepoint through the connector instead."
+  },
+
+  "lookback_days": 7,
+  "display_cap": 10,
+  "stale_after_days": 30,
+  "min_confidence_shown": "low",
+
+  "categories": ["board", "member", "team", "personal", "admin"],
+
+  "sources": {
+    "fireflies": true,
+    "granola": true,
+    "outlook_sent": true,
+    "slack": true,
+    "asana": false
+  },
+
+  "exclude_meetings": ["Therapy", "1:1 with HR", "All Hands"],
+  "exclude_solo_meetings": true,
+
+  "dashboard_export": false,
+  "dashboard_data_dir": "",
+
+  "output": {
+    "markdown": "<store>/commitments.md",
+    "html": "<store>/commitments.html",
+    "deliver_to": "chat",
+    "_deliver_options": "chat | file | slack_dm | artifact"
+  },
+
+  "schedule": {
+    "cadence": "weekdays 16:00",
+    "_note": "Created via the schedule skill. The prompt must name the meeting-commitments skill."
+  }
+}

@@ -1,42 +1,60 @@
 {
   "name": "organization-ai-skills",
   "description": "Generic Agent Skills for organizational knowledge work, for Claude and ChatGPT. Grouped into installable plugins so admins can preinstall some for everyone and offer others per team.",
-  "owner": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "owner": {
+    "name": "Alec Foster",
+    "url": "https://github.com/alectivism"
+  },
   "plugins": [
     {
       "name": "org-research",
-      "description": "Web research, tool routing, LinkedIn and Reddit scraping.",
-      "version": "1.0.0",
+      "description": "Cited web research, per-job search and fetch tool routing, LinkedIn and Reddit scraping, and prospect qualification that stays read-only against your CRM.",
+      "version": "1.1.0",
       "source": "./org-research",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
-    },
-    {
-      "name": "org-content",
-      "description": "Content and comms drafting: blog, social, press, case studies, email, events, strategy.",
-      "version": "1.0.0",
-      "source": "./org-content",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
-    },
-    {
-      "name": "org-meetings",
-      "description": "Briefing prep, meeting follow-ups, research briefs, Slack summaries.",
-      "version": "1.0.0",
-      "source": "./org-meetings",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
-    },
-    {
-      "name": "org-ops",
-      "description": "Asana tasks, document search, launch planning, Zapier workflows.",
-      "version": "1.0.0",
-      "source": "./org-ops",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+      "author": {
+        "name": "Alec Foster",
+        "url": "https://github.com/alectivism"
+      }
     },
     {
       "name": "org-agents",
-      "description": "Subagent delegation with a per-platform model table.",
-      "version": "1.0.0",
+      "description": "Subagent delegation and a war-council decision panel, with five ready worker agents. Routes gathering, reading, and bulk work to cheaper models and escalates only when it helps.",
+      "version": "1.1.0",
       "source": "./org-agents",
-      "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" }
+      "author": {
+        "name": "Alec Foster",
+        "url": "https://github.com/alectivism"
+      }
+    },
+    {
+      "name": "org-content",
+      "description": "Content and comms drafting (blog, social, press, case studies, email, events, strategy), audience personas, personal voice, and a factual-accuracy gate with a claim scanner.",
+      "version": "1.1.0",
+      "source": "./org-content",
+      "author": {
+        "name": "Alec Foster",
+        "url": "https://github.com/alectivism"
+      }
+    },
+    {
+      "name": "org-meetings",
+      "description": "Daily and weekly triage, prep for a specific meeting, meeting write-ups, Slack summaries, and a ledger that tracks what you promised across meetings over time.",
+      "version": "1.1.0",
+      "source": "./org-meetings",
+      "author": {
+        "name": "Alec Foster",
+        "url": "https://github.com/alectivism"
+      }
+    },
+    {
+      "name": "org-ops",
+      "description": "Asana tasks, document search and storage, launch planning, Zapier workflows, Obsidian vault setup, and the path for staff to propose a fix to a skill.",
+      "version": "1.1.0",
+      "source": "./org-ops",
+      "author": {
+        "name": "Alec Foster",
+        "url": "https://github.com/alectivism"
+      }
     }
   ]
 }

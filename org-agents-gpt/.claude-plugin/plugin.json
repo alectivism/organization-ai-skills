@@ -1,0 +1,11 @@
+{
+  "name": "org-agents-gpt",
+  "description": "The ChatGPT and Codex edition of org-agents: the same delegation and war-council skills, with GPT-5.6 model tiers and installable Codex agent templates.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alec Foster",
+    "url": "https://github.com/alectivism"
+  },
+  "repository": "https://github.com/alectivism/organization-ai-skills",
+  "license": "MIT"
+}

@@ -57,3 +57,9 @@ Structure the output as:
 ### Suggested Outcomes
 - [What should this meeting accomplish?]
 - [What decisions need to be made?]
+
+## Related skills
+
+This skill preps for one specific meeting. For a personal daily triage across
+inbox and calendar, use `daily-briefing`. For writing up a meeting after it
+happened, use `meeting-followup`.

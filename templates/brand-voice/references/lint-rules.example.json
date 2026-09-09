@@ -1,0 +1,80 @@
+{
+  "_comment": "Copy this file to lint-rules.json (drop .example) and edit freely. scripts/lint.py reads lint-rules.json if present, falling back to this .example file otherwise, so the linter works out of the box before you customize it.",
+  "flag_clipped_fragments": false,
+  "_flag_clipped_fragments_comment": "Off by default. When true, flags 2+ consecutive sentences of 4 words or fewer as a staccato AI tell. Two short declarative sentences in a row are normal organizational prose, so only turn this on if your house style bans the rhythm.",
+  "always_replace": [
+    "delve",
+    "leverage",
+    "landscape",
+    "tapestry",
+    "realm",
+    "robust",
+    "comprehensive",
+    "seamless",
+    "cutting-edge",
+    "pivotal",
+    "crucial",
+    "underscore",
+    "unveil",
+    "harness",
+    "foster",
+    "streamline",
+    "empower",
+    "utilize",
+    "synergy",
+    "synergies",
+    "game-changer",
+    "game-changing",
+    "unlock",
+    "unleash",
+    "boast",
+    "testament",
+    "elevate",
+    "spearhead"
+  ],
+  "_always_replace_comment": "Platform-neutral AI-tell vocabulary. Matching is inflection-aware in the script (leverage also catches leveraging/leveraged). Add your own org-specific banned words here too.",
+  "name_exempt": [
+    "foster"
+  ],
+  "_name_exempt_comment": "Words in always_replace that collide with a common surname. The script flags only the lowercase verb, never a capitalized name.",
+  "empty_intensifiers": [
+    "very",
+    "really",
+    "extremely",
+    "incredibly",
+    "significantly",
+    "truly",
+    "world-class"
+  ],
+  "candor_markers": [
+    "honestly",
+    "frankly",
+    "candidly",
+    "to be honest",
+    "in all honesty",
+    "the honest truth"
+  ],
+  "copy_paste_fingerprints": [
+    "i hope this helps",
+    "certainly!",
+    "great question",
+    "as an ai",
+    "citeturn",
+    "oai_citation",
+    "contentreference",
+    "utm_source=chatgpt",
+    "utm_source=claude",
+    "utm_source=perplexity",
+    "[your name]",
+    "[insert",
+    "as of my last update"
+  ],
+  "naming_rules": [
+    {
+      "pattern": "\\bEXAMPLE\\s+Global\\b(?!\\.com)",
+      "message": "example only \u2014 replace with your own org's naming rule (e.g., a defunct legal-entity form that should never appear in copy)",
+      "flags": "i"
+    }
+  ],
+  "_naming_rules_comment": "Org-specific naming mistakes that are always wrong \u2014 wrong conjunction/symbol, defunct legal name, disallowed nickname. 'pattern' is a Python regex; 'flags' is optional (i = case-insensitive). Delete the placeholder example above and add your own from the 'Not acceptable' list in SKILL.md's Organization Name Rules section."
+}

@@ -1,12 +1,16 @@
 ---
 name: zapier-workflow-builder
 description: Design Zapier workflows (Zaps) for any automation need — architecture, troubleshooting, Copilot prompts. Use for "build a Zap", "Zapier help", "automate this", or any workflow Zapier could solve.
-status: ready
+status: template
 ---
+
+> **Template skill.** Fill in the [BRACKETED] placeholders with your organization's details — or paste your org context and ask Claude to populate them for you.
 
 # Zapier Workflow Builder
 
 Guide users through designing and building effective Zapier workflows. Your role is to help the user think through their automation need, design the right Zap architecture, and produce either step-by-step instructions or a Copilot prompt they can paste into Zapier to build it.
+
+Before building anything, read the trigger/action logic back to the user in plain language ("so when X happens, this checks Y and then does Z — is that right?"). Confirm it matches what they meant before generating steps or a Copilot prompt. Apply your org's naming and folder conventions (below), and point users to any shared, pre-authenticated app connections instead of asking them to reconnect an account that's already shared.
 
 ---
 
@@ -36,7 +40,32 @@ Based on the user's needs, design the workflow following these principles:
 ```
 [PREFIX] Trigger App: Event -> Action App: Result
 ```
-Example prefixes: `[MARKETING]`, `[OPS]`, `[SALES]`, `[HR]`, `[FINANCE]`, `[DAILY]`, `[WEEKLY]`
+Example prefixes: `[MARKETING]`, `[OPS]`, `[SALES]`, `[HR]`, `[FINANCE]`, `[DAILY]`, `[WEEKLY]` — replace with the department/cadence tags your org actually uses.
+
+**Folder taxonomy:**
+
+Organize the Zapier workspace by team, with a dedicated templates folder that's never edited directly:
+
+```
+[YOUR ORG] Zaps/
+├── [Department A]/
+│   ├── [Sub-area]
+│   └── [Sub-area]
+├── [Department B]/
+│   ├── [Sub-area]
+│   └── [Sub-area]
+├── Operations/
+│   ├── Reporting
+│   └── Notifications
+├── _Archive/
+└── [YOUR ORG] TEMPLATES (DO NOT EDIT — duplicate to use)
+```
+
+Duplicate templates from the TEMPLATES folder, never edit the originals, and move the duplicate out of that folder before editing.
+
+**Shared connections:**
+
+If your org pre-authenticates and shares certain app connections across the team (a CRM enrichment tool, an AI provider, a shared inbox), point users to those instead of having them connect their own accounts — it avoids duplicate auth, keeps API usage on one bill, and means a workflow doesn't break when an individual staffer leaves. For AI by Zapier steps, default to the free "Zapier-provided" model unless the task needs stronger reasoning, in which case use the org's shared AI connection. Zapier's model roster and pricing change often: check the Zap editor's model picker for what's current rather than trusting any specific model name, and treat "cheapest/free model that can do the extraction" as the selection rule.
 
 **When to split into multiple Zaps:**
 - More than 8 steps — hard to debug

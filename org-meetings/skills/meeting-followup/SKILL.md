@@ -69,3 +69,9 @@ Present as separate email drafts with recipient lists:
 
 ## Confirmation
 **Always present all drafts for review before any sending action.**
+
+## Related skills
+
+This skill writes up one meeting that just ended. For tracking what someone
+promised across many meetings over time, use `meeting-commitments`. For
+prepping before a meeting instead of after, use `briefing-prep`.

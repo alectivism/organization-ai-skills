@@ -69,3 +69,7 @@ List your organization's most frequently needed files:
 3. Search or browse for the document
 4. Return the document link or content
 5. If not found, suggest alternative locations or who might know where it is
+
+Once the document is found, use the `document-storage` skill for reading it in full,
+editing it in place, uploading a new file, or setting up a locally synced folder — this
+skill only covers locating it.

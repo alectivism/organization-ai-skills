@@ -1,0 +1,7 @@
+interface:
+  display_name: "War Council"
+  short_description: "Run a panel of opinionated expert personas against a decision before you commit"
+  default_prompt: "Convene a war council on this decision. Frame it, build the roster, run the members independently, then reconcile them."
+
+policy:
+  allow_implicit_invocation: true

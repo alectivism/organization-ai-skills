@@ -88,6 +88,11 @@ Workstream-specific planning to align on execution.
 
 Track progress in [YOUR PROJECT MANAGEMENT TOOL], surface blockers regularly.
 
+**Weekly tracking:**
+- Move tasks across sections in [YOUR PROJECT MANAGEMENT TOOL] as work progresses
+- Surface blockers in the weekly team call
+- Report progress in the relevant [Slack/Teams] channel
+
 **Launch Sequence Template:**
 
 | Timing | Action | Owner | Channel |
@@ -104,6 +109,8 @@ Track progress in [YOUR PROJECT MANAGEMENT TOOL], surface blockers regularly.
 | T+4 weeks | Impact report / retrospective | PM | Internal |
 
 ## Project Brief Template
+
+A ready-to-fill brief also ships with this skill at `templates/project-brief.md` — copy it and fill the bracketed fields.
 
 ```markdown
 # Project Brief: [Project Title]
@@ -140,6 +147,14 @@ Track progress in [YOUR PROJECT MANAGEMENT TOOL], surface blockers regularly.
 ## Promotional Activities
 [How this will be promoted — channels, timeline, assets needed]
 ```
+
+## Integration with Your Tools
+
+- **Project management:** create the project in [YOUR PROJECT MANAGEMENT TOOL] using your standard launch sections (see Phase 2 above)
+- **Document storage:** upload the Project Brief to [YOUR DOCUMENT STORAGE]
+- **Team chat:** post updates in the relevant [Slack/Teams] channels; use a general/org-wide channel for major launches
+- **CRM:** track engagement and revenue attribution in [YOUR CRM], if this launch has a revenue or membership angle
+- **Email platform:** set up launch communication sequences in [YOUR EMAIL MARKETING TOOL]
 
 ## Launch Scale Guide
 

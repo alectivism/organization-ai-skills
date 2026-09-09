@@ -1,8 +1,11 @@
 {
   "name": "org-ops",
-  "description": "Operations and workflow: Asana task management, document search across SharePoint/Drive/Notion, launch planning, and Zapier workflow building.",
-  "version": "1.0.0",
-  "author": { "name": "Alec Foster", "email": "alec@mmaglobal.com" },
+  "description": "Asana tasks, document search and storage, launch planning, Zapier workflows, Obsidian vault setup, and the path for staff to propose a fix to a skill.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Alec Foster",
+    "url": "https://github.com/alectivism"
+  },
   "repository": "https://github.com/alectivism/organization-ai-skills",
   "license": "MIT"
 }
