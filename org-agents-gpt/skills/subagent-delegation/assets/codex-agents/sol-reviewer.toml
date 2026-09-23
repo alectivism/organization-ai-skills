@@ -1,6 +1,7 @@
+# codex-tier: frontier   (model line is rewritten at install time from the Codex model catalog; do not hand-edit the slug)
 name = "sol-reviewer"
 description = "Independent adversarial review of a diff, plan, claim, or document. Strongest reasoning tier; use for verdicts that matter."
-model = "gpt-5.6-sol"
+model = "gpt-6-astra"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 developer_instructions = """

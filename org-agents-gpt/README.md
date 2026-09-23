@@ -26,7 +26,7 @@ same agent names, models, or reasoning controls.
 
 This is the ChatGPT/Codex edition of `org-agents`, its two skills
 (`subagent-delegation` and `war-council`) mirror that plugin's, but this one
-speaks in GPT-5.6 model tiers and Codex TOML agents instead of Claude plugin
+speaks in GPT model tiers and Codex TOML agents instead of Claude plugin
 agent definitions. Install whichever plugin matches your platform, not both:
 `org-agents` for Claude, `org-agents-gpt` for ChatGPT Work or Codex.
 
@@ -43,9 +43,14 @@ them into my personal Codex agent directory. Do not overwrite any existing
 files. Verify what was installed and tell me whether I need to restart Codex.
 ```
 
-The installed routing policy is: Luna/high for research, Luna/medium for
-summarization, Luna/low for bounded bulk work, Terra/medium for long-context
-ingestion, and Sol for verification, fact-checking, or adversarial review.
+Each template carries a `# codex-tier:` tag, and the installer pins the current
+model for that tier from Codex's own catalog, resolved by model family rather
+than catalog rank: `org-verifier` and `sol-reviewer` on the frontier tier
+(newest Astra, GPT-6 Astra as of 2026-09-22); `org-researcher`,
+`org-summarizer`, `org-fact-checker`, `terra-ingest`, and `council-member` on
+the standard tier (newest Sol, GPT-6 Sol); `org-bulk-worker` and `luna-leaf` on
+the fast tier (newest Luna, GPT-6 Luna). All run at medium effort except bulk
+work at low. Rerun the installer with `--sync` after a new GPT release.
 `luna-leaf` remains for one small, focused task, not broad research or source
 sweeps. `council-member` is the ninth template: one persona on a war-council
 panel, spawned several at a time in parallel by the `war-council` skill.

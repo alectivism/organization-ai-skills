@@ -1,11 +1,12 @@
+# codex-tier: fast   (model line is rewritten at install time from the Codex model catalog; do not hand-edit the slug)
 name = "luna-leaf"
 description = "Small, well-bounded leaf task: single-file edit, commit message, rename, tiny verdict, or short focused analysis. Never use for long-context ingestion or multi-file exploration."
-model = "gpt-5.6-luna"
-model_reasoning_effort = "xhigh"
+model = "gpt-6-luna"
+model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 developer_instructions = """
 You are a leaf worker. Your task is small and fully specified in the prompt.
 Do exactly what is asked, nothing more. Return a terse, complete result.
 If the task requires reading many files or holding broad context, stop and
-report that it needs escalation to Terra or Sol instead of grinding.
+report that it needs escalation to terra-ingest or sol-reviewer instead of grinding.
 """

@@ -32,7 +32,7 @@ Apply this order:
      research.
    - `org-summarizer` is the default for faithful compression of long notes,
      documents, threads, or transcripts.
-   - `org-bulk-worker` is the default Luna route for high-volume, bounded,
+   - `org-bulk-worker` is the default fast-tier route for high-volume, bounded,
      low-judgment work.
    - `org-fact-checker` is for a claim-by-claim check of a draft against
      sources it opens itself; read-only, returns a verdict, not a rewrite.
@@ -41,9 +41,9 @@ Apply this order:
    - `org-verifier` and `sol-reviewer` are for independent, read-only checks.
 3. Otherwise choose the smallest advertised built-in role that fits the work.
    Common examples include:
-   - `luna-leaf`: one small, sharply bounded lookup or mechanical leaf task.
-     In runtimes where it is fixed to Luna/xhigh, do not describe it as
-     configurable Luna/high, medium, or low.
+   - `luna-leaf`: one small, sharply bounded lookup or mechanical leaf task
+     on the fast tier. Describe its model and effort only as the runtime
+     advertises them.
    - `terra-ingest`: long-context reading, many files, or a source sweep that
      must remain coherent.
    - `sol-reviewer`: independent, read-only verification when the stakes
@@ -147,10 +147,13 @@ files.
 This skill includes nine Codex templates under `assets/codex-agents/` and a
 safe, non-overwriting installer at `scripts/install-codex-agents.sh`. Run the
 installer only when the user explicitly asks to install the local agents. The
-templates put bounded research, summarization, and bulk work on Luna; reserve
-Terra for sustained-context ingestion, and Sol for verification, fact-checking,
-or difficult independent reasoning. They remain separate from the runtime-aware Work-mode
-fallback above.
+templates are tier-tagged and the installer pins the current model for each
+tier from Codex's catalog at install time: frontier (newest Astra) for
+verification and adversarial review, standard (newest Sol, the workhorse) for
+research, summarization, fact-checking, ingestion, and council members, fast
+(newest Luna) for bulk and leaf work. All at medium effort except bulk work at
+low. Rerun with `--sync` after a new GPT release. They remain separate from the
+runtime-aware Work-mode fallback above.
 
 ## Verification
 

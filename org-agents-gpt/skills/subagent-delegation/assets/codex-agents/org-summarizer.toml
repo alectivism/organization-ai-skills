@@ -1,6 +1,7 @@
+# codex-tier: standard   (model line is rewritten at install time from the Codex model catalog; do not hand-edit the slug)
 name = "org-summarizer"
 description = "Long-context summarization of documents, threads, notes, and transcripts when the full source should stay out of the main conversation."
-model = "gpt-5.6-luna"
+model = "gpt-6-sol"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 nickname_candidates = ["Brief", "Clarity", "Digest"]

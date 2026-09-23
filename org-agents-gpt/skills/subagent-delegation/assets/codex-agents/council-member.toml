@@ -1,6 +1,7 @@
+# codex-tier: standard   (model line is rewritten at install time from the Codex model catalog; do not hand-edit the slug)
 name = "council-member"
 description = "One opinionated persona on a war-council panel. Spawn several in parallel, each with a different persona injected by the parent, to critique a decision independently before the parent reconciles them."
-model = "gpt-5.6-sol"
+model = "gpt-6-sol"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 nickname_candidates = ["Counsel", "Dissent", "Chair"]
