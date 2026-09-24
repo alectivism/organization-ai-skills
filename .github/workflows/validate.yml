@@ -1,0 +1,27 @@
+name: Validate
+
+# Runs scripts/validate.py on every push and pull request, so a broken install
+# or leaked org-specific content fails loudly instead of waiting for someone to
+# remember the check. It guards: strict-YAML frontmatter, name vs folder,
+# status vs [BRACKETED] callout, the agents/-folder and .codex-plugin import
+# breakers, manifests vs plugin dirs, stale MANIFEST.json checksums, and the
+# org-leak and real-email scan.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate skills, manifests, and leak scan
+        run: python3 scripts/validate.py
